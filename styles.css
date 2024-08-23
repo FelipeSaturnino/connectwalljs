@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#congrats-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 3px solid #4caf50;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#congrats-modal h2 {
+    margin-bottom: 10px;
+}
+
+#congrats-modal button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 420px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.grid-item.selected {
+    background-color: #add8e6;
+}
+
+.grid-item.correct {
+    animation: groupAnimation 0.5s forwards;
+}
+
+.correct-1 { background-color: #4caf50; } /* Verde */
+.correct-2 { background-color: #ff9800; } /* Laranja */
+.correct-3 { background-color: #2196f3; } /* Azul */
+.correct-4 { background-color: #9c27b0; } /* Roxo */
+
+#attempts {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#message {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+@keyframes groupAnimation {
+    0% { background-color: #add8e6; }
+    100% { background-color: inherit; }
+}

@@ -3,53 +3,20 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding: 20px;
-    position: relative;
 }
-/* styles.css */
+
 #logo {
     max-width: 200px;
     margin-bottom: 20px;
 }
 
-#congrats-modal {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 3px solid #4caf50;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    width: 300px;
-    border-radius: 8px;
-}
-
-#congrats-modal h2 {
-    margin-bottom: 10px;
-}
-
-#congrats-modal button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
 #grid {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 130px);  /* Aumentei de 100px para 130px */
+    grid-template-rows: repeat(4, 130px);  /* Aumentei de 100px para 130px */
     gap: 10px;
     margin: 20px auto;
-    max-width: 420px;
+    max-width: 560px;  /* Aumentei de 420px para 560px */
 }
 
 .grid-item {
@@ -63,6 +30,8 @@ body {
     transition: background-color 0.3s ease;
     font-size: 16px;
     font-weight: 600;
+    padding: 5px;  /* Adicionei padding para espaçamento interno */
+    text-align: center;  /* Centraliza o texto */
 }
 
 .grid-item.selected {

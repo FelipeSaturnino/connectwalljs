@@ -5,6 +5,11 @@ body {
     padding: 20px;
     position: relative;
 }
+/* styles.css */
+#logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
 
 #congrats-modal {
     display: none;

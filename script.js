@@ -15,30 +15,30 @@ const rounds = [
     },
     {
         words: [
-            "Maçã", "Banana", "Laranja", "Uva",
-            "Futebol", "Basquete", "Tênis", "Vôlei",
-            "Londres", "Paris", "Roma", "Berlim",
-            "Coca-Cola", "Pepsi", "Fanta", "Sprite"
+            "Capivara", "Rato", "Esquilo", "Porquinho-da-Índia",
+            "Lousa", "Giz", "Apagador", "Caderno",
+            "Pastel", "Feijoada", "Coxinha", "Brigadeiro",
+            "Microfone", "Violão", "Piano", "Bateria"
         ],
         correctGroups: [
-            { words: ["Maçã", "Banana", "Laranja", "Uva"], color: "correct-1", theme: "Frutas" },
-            { words: ["Futebol", "Basquete", "Tênis", "Vôlei"], color: "correct-2", theme: "Esportes" },
-            { words: ["Londres", "Paris", "Roma", "Berlim"], color: "correct-3", theme: "Cidades" },
-            { words: ["Coca-Cola", "Pepsi", "Fanta", "Sprite"], color: "correct-4", theme: "Refrigerantes" }
+            { words: ["Capivara", "Rato", "Esquilo", "Porquinho-da-Índia"], color: "correct-1", theme: "Roedores" },
+            { words: ["Lousa", "Giz", "Apagador", "Caderno"], color: "correct-2", theme: "Objetos de Sala de Aula" },
+            { words: ["Pastel", "Feijoada", "Coxinha", "Brigadeiro"], color: "correct-3", theme: "Alimentos Típicos" },
+            { words: ["Microfone", "Violão", "Piano", "Bateria"], color: "correct-4", theme: "Instrumentos Musicais" }
         ]
     },
     {
         words: [
-            "Microsoft", "Apple", "Google", "Amazon",
-            "Carro", "Bicicleta", "Avião", "Barco",
-            "Júpiter", "Marte", "Terra", "Vênus",
-            "Piano", "Violão", "Bateria", "Flauta"
+            "Documentos", "Planilhas", "Apresentações", "Formulários",
+            "Abstração", "Padrões", "Algoritmo", "Decomposição",
+            "Breno", "Maria Paula", "Andressa", "Rafael",
+            "Júpiter", "Marte", "Terra", "Saturno"
         ],
         correctGroups: [
-            { words: ["Microsoft", "Apple", "Google", "Amazon"], color: "correct-1", theme: "Empresas de Tecnologia" },
-            { words: ["Carro", "Bicicleta", "Avião", "Barco"], color: "correct-2", theme: "Meios de Transporte" },
-            { words: ["Júpiter", "Marte", "Terra", "Vênus"], color: "correct-3", theme: "Planetas" },
-            { words: ["Piano", "Violão", "Bateria", "Flauta"], color: "correct-4", theme: "Instrumentos Musicais" }
+            { words: ["Documentos", "Planilhas", "Apresentações", "Formulários"], color: "correct-1", theme: "Ferramentas Google" },
+            { words: ["Abstração", "Padrões", "Algoritmo", "Decomposição"], color: "correct-2", theme: "Pilares do Pensamento Computacional" },
+            { words: ["Breno", "Maria Paula", "Andressa", "Rafael"], color: "correct-3", theme: "Nomes Populares" },
+            { words: ["Júpiter", "Marte", "Terra", "Saturno"], color: "correct-4", theme: "Planetas" }
         ]
     }
 ];
@@ -160,7 +160,7 @@ function showFinalPassword() {
         modal.innerHTML = `
             <h2>Parabéns!</h2>
             <p>Você completou todas as rodadas!</p>
-            <p>A senha é: <strong>1234ABC</strong></p>
+            <p>A senha é: <strong>FOQUE APENAS NO IMPORTANTE</strong></p>
             <button onclick="closeCongratsModal()">Jogar Novamente</button>
         `;
         document.body.appendChild(modal);
